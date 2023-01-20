@@ -70,7 +70,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-memoria = {"num_guardado": 0}
+memoria = {'num_guardado': 0}
 
 @app.post('/contador')
 def novo_valor():
@@ -81,7 +81,7 @@ def novo_valor():
 
 @app.get('/contador')
 def mostra_memoria():
-    return {'numero': memoria["num_guardado"]}, 200
+    return {'numero': memoria['num_guardado']}, 200
 
 
 @app.put('/contador/incrementa')
